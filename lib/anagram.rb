@@ -22,4 +22,6 @@ class Anagram
       # Sort the characters of a word in alphabetical order (case-insensitive)
     end
   end
-  
+  listen = Anagram.new("listen")
+matches = listen.match(%w[enlists google inlets banana])
+puts matches.inspect
